@@ -3,6 +3,9 @@
 // Path to the front controller (this file)
 define('FCPATH', __DIR__ . DIRECTORY_SEPARATOR);
 
+// Set datetime zone to asia/jakarta
+date_default_timezone_set('Asia/Jakarta');
+
 /*
  *---------------------------------------------------------------
  * BOOTSTRAP THE APPLICATION
