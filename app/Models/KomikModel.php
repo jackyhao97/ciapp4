@@ -8,14 +8,20 @@ class KomikModel extends Model
 {
     protected $table = 'komik';
     protected $useTimestamps = true;
-    protected $allowedFields = ['judul', 'slug', 'penulis', 'penerbit', 'sampul'];
+    protected $allowedFields = [
+        'judul',
+        'slug',
+        'penulis',
+        'penerbit',
+        'sampul',
+    ];
 
-    public function getKomik($slug = false)
+		public function getKomik($slug = false)
     {
-      if ($slug == false) {
-        return $this->findAll();
-      }
+        if ($slug == false) {
+            return $this->findAll();
+        }
 
-      return $this->where(['slug' => $slug])->first();
+        return $this->where(['slug' => $slug])->first();
     }
 }
