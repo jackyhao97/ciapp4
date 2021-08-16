@@ -22,7 +22,7 @@
                 <?= csrf_field(); ?>
                 <input type="hidden" name="_method" value="DELETE">
                 <button type="submit" class="btn btn-danger" onclick="return confirm('apakah anda yakin?')">Delete</button>
-              </form>              
+              </form>
 
               <br><br>
               <a href="<?= base_url('/komik'); ?>">Kembali ke daftar komik</a>
